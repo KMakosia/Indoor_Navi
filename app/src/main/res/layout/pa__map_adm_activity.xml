@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        mapbox:mapbox_cameraTargetLat="53.0172429"
+        mapbox:mapbox_cameraTargetLng="18.6024484"
+        mapbox:mapbox_cameraZoom="18" />
+
+    <LinearLayout
+        android:id="@+id/pietra_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:background="#FFF1F7F0"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/piwnica_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/pminus1"
+            android:textColor="#476a42"/>
+
+        <Button
+            android:id="@+id/parter_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/p0"
+            android:textColor="#476a42"/>
+
+        <Button
+            android:id="@+id/pietro2_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/p2"
+            android:textColor="#476a42"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mapView"
+        android:onClick="pa_map_adm_register"
+        android:text="@string/pa_re" />
+
+</RelativeLayout>

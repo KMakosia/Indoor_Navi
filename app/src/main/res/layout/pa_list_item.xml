@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/BSSID_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/pa_show_bssid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/BSSID_Text"
+            android:layout_below="@+id/BSSID_Text"
+            android:text="@string/pa_show_rssi"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/BSSID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/BSSID_Text"
+            android:layout_alignBottom="@+id/BSSID_Text"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/BSSID_Text"
+            android:text="@string/Null"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/RSSI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/BSSID_Text"
+            android:text="@string/Null"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

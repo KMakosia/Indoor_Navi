@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hybryda</string>
+    <string name="menu">MENU</string>
+    <string name="map">Mapa</string>
+    <string name="pa">Panel Administracyjny</string>
+    <string name="pa_show_rssi">RSSI: </string>
+    <string name="pa_show_bssid">BSSID: </string>
+    <string name="Null">null</string>
+    <string name="pa_re">Rejestracja nowego punktu</string>
+    <string name="pa_mod">Modyfikowanie obecnego punktu</string>
+    <string name="pa_external_show">Pokaz Punkt</string>
+    <string name="eduroam">eduroam</string>
+    <string name="konf">konferencja</string>
+    <string name="pa_filtraccept">Zaakceptuj filtr</string>
+    <string name="title_activity_navi_map_2">navi_map_2</string>
+    <string name="pminus1">p-1</string>
+    <string name="p0">p0</string>
+    <string name="p2">p2</string>
+    <string name="mapa_admin">Mapa Admina</string>
+</resources>

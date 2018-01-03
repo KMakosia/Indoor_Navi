@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mikus.hybryda.pa_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey" >
+
+        <Button
+            android:id="@+id/mapa_adm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/next_activity"
+            android:layout_alignStart="@+id/next_activity"
+            android:layout_below="@+id/next_activity"
+            android:layout_marginTop="15dp"
+            android:onClick="next_activity_adm_"
+            android:text="@string/mapa_admin" />
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/point_number"
+            android:layout_centerHorizontal="true"
+            android:onClick="register"
+            android:text="@string/pa_re" />
+
+        <Button
+            android:id="@+id/mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="177dp"
+            android:onClick="modify"
+            android:text="@string/pa_mod" />
+
+        <EditText
+            android:id="@+id/point_number"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="number"
+            android:text="-1"/>
+
+        <Button
+            android:id="@+id/next_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:onClick="Next_Activity"
+            android:text="@string/pa_external_show" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/mod"
+            android:layout_alignTop="@+id/mod"
+            android:layout_marginTop="75dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/eduroam"
+            android:textColor="#B22222"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignEnd="@+id/reg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/konf"
+            android:textColor="#B22222"/>
+
+        <Button
+            android:id="@+id/filtr_btk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/pa_filtraccept"
+            android:onClick="filtr_btk"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
